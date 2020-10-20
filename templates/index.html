@@ -1,10 +1,14 @@
-<header>
-  <img
-    src="https://s.gr-assets.com/assets/home/header_logo-8d96d7078a3d63f9f31d92282fd67cf4.png"
-    alt=""
-  />
-  <p>Meet your next favorite book.</p>
-</header>
-<p>Deciding what to read next?</p>
-<p>What are your friends reading?</p>
-<p>Are you an author or a publisher?</p>
+{% extends 'base.html' %}
+
+{% block content %}
+
+<p>{{ category.title }}</p>
+<p>{{ category.subtitle }}</p>
+
+<ul>
+  {% for name in categories %}
+  <li><a href="{{ url_for('category', name=name) }}">{{ name | title }}</a></li>
+  {% endfor %}
+</ul>
+
+{% endblock %}
