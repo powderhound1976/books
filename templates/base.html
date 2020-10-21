@@ -1,42 +1,12 @@
 {% include 'partials/header.html' %}
 
-<div class="container">
+<div class="container is-widescreen">
     <div class="columns is-mobile is-centered">
         <div class="column">
-            <nav class="navbar" role="navigation" aria-label="main navigation">
-                <div class="navbar-brand">
-                    <a class="navbar-item" href="/">
-                        <h1>Meet your next favorite book.<h1>
-                    </a>
-                </div>
-                <div class="navbar-menu">
-                    <div class="navbar-start">
-                        <a class="navbar-item">
-                            Deciding what to read next?
-                        </a>
-                        <a class="navbar-item">
-                            What are your friends reading?
-                        </a>
-                        <a class="navbar-item">
-                            What will you discover?
-                        </a>
-                    </div>
 
-                    <div class="navbar-end">
-                        <div class="navbar-item">
-                            <div class="buttons">
-                                <a class="button is-primary">
-                                    <strong>Sign up</strong>
-                                </a>
-                                <a class="button is-light">
-                                    Cart
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </nav>
             {% block content %}
+            {% endblock %}
+            {% block browse %}
             {% endblock %}
 
         </div>

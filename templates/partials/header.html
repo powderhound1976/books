@@ -2,15 +2,47 @@
 <html>
 
 <head>
-  <link rel="stylesheet" href="{{url_for('static', filename='css/bulma.min.css')}}">
+  <link rel="stylesheet" href="{{url_for('static', filename='css/bulma.css')}}">
   <link rel="stylesheet" href="{{url_for('static', filename='css/styles.css')}}">
 </head>
 
 <body>
-  <header>
-    <img src="https://s.gr-assets.com/assets/home/header_logo-8d96d7078a3d63f9f31d92282fd67cf4.png" alt="" />
-    <p>Meet your next favorite book!!!!!.</p>
-  </header>
+  <section class="hero is-medium">
+    <!-- Hero head: will stick at the top -->
+    <div class="hero-head">
+      <nav class="navbar">
+        <div class="container">
+          <div class="navbar-brand">
+            <a class="navbar-item">
+              <img class="logo"
+                src="https://s.gr-assets.com/assets/home/header_logo-8d96d7078a3d63f9f31d92282fd67cf4.png" alt="Logo">
+            </a>
+            <span class="navbar-burger burger" data-target="navbarMenuHeroA">
+              <span></span>
+              <span></span>
+              <span></span>
+            </span>
+          </div>
+          <div id="navbarMenuHeroA" class="navbar-menu">
+            <div class="navbar-end">
+              <a class="navbar-item is-active" href="/">
+                Home
+              </a>
+              <a class="navbar-item" href="/browse">
+                Categories
+              </a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <!-- Hero content: will be in the middle -->
+
+
+
+  </section>
+
 </body>
 
 </html>

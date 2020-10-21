@@ -74,3 +74,8 @@ def category(name):
 def book(category, id):
     book = categories[category]['books'][id]
     return render_template("book.html", book=book)
+
+
+@app.route("/browse")
+def browse():
+    return render_template("browse.html", categories=categories)
